@@ -1,0 +1,46 @@
+@media screen and (max-width: 1199px) {
+  .job {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job {
+    padding-bottom: 94px;
+  }
+
+  .job-list {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+  }
+
+  .job-item {
+    display: block;
+    position: relative;
+  }
+
+  .job-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include font(14px, 700, 1.14);
+
+    text-transform: uppercase;
+    color: var(--accent-color-font);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  .heading-work {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,101 @@
+.hero {
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-mobile/hero-mobile-jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #c4c4c4;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.heading {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include font(26px, 900, 1.61);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-color-font);
+  width: 320px;
+}
+
+.modal {
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include font(16px, 700, 1.88);
+  letter-spacing: 0.06em;
+  color: var(--accent-color-font);
+  transition: background-color var(--transition-dur-funk);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bcg-btn-hover-focus);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  scree and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/hero-mobile/hero-mobile-jpg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-tablet/hero-tablet-jpg.jpg);
+  }
+
+  .heading {
+    width: 360px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  scree and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-tablet/hero-tablet-jpg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero-desktop/hero-desktop-jpg.jpg);
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .heading {
+    @include font(44px, 900, 1.36);
+    width: 696px;
+  }
+
+  .modal {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  scree and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero-desktop/hero-desktop-jpg@2x.jpg);
+  }
+}

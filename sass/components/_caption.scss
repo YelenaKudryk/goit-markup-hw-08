@@ -1,0 +1,8 @@
+.caption {
+  margin-bottom: 30px;
+
+  @include font(28px, 700, 1.18);
+
+  text-align: center;
+  color: var(--color-title);
+}

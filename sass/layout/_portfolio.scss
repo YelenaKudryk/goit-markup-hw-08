@@ -1,0 +1,137 @@
+.text {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.text-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.list-button {
+  flex-basis: calc((100% - 24px) / 3);
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  @include font(16px, 500, 1.63);
+  color: var(--color-title);
+  background-color: var(--secondary-color-background);
+  letter-spacing: 0.03em;
+  transition: color var(--transition-dur-funk), background-color var(--transition-dur-funk),
+    box-shadow var(--transition-dur-funk), border-radius var(--transition-dur-funk);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-font);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.type-project {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.name-project {
+  margin-bottom: 4px;
+
+  @include font(18px, 700, 2);
+  letter-spacing: 0.04em;
+  color: var(--color-title);
+}
+
+.type-work {
+  @include font(16px, 400, 1.88);
+}
+
+.list-projects-box-link {
+  display: block;
+  transition: box-shadow var(--transition-dur-funk);
+
+  &:hover,
+  &k:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.list-projects-box {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.type-project-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @include font(18px, 400, 1.56);
+
+  color: var(--accent-color-font);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translate(0, 100%);
+  transition: transform var(--transition-dur-funk);
+
+  .list-projects-box-link:hover &,
+  .list-projects-box-link:focus & {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-list {
+    flex-wrap: nowrap;
+  }
+
+  .list-projects {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .list-projects-box {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .list-projects-box {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}

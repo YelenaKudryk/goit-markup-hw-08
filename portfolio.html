@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-text">
+        <nav class="header-nav">
+          <a class="link logo header-nav__logo" href="./index.html" lang="en"
+            >Web<span class="logo-name">Studio</span></a
+          >
+          <ul class="list header-menu">
+            <li class="header-menu__list">
+              <a class="link header-menu__item" href="./index.html">Студия</a>
+            </li>
+            <li class="header-menu__list">
+              <a class="link header-menu__item header-menu__item_current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-menu__list">
+              <a class="link header-menu__item" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <ul class="list header-contact">
+          <li class="header-contact__list">
+            <a class="link header-contact__mail" href="mailto:info@devstudio.com">
+              <svg class="header-contact__envelope-img">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact__list">
+            <a class="link header-contact__telefon" href="tel:+380961111111">
+              <svg class="header-contact__smartphone-img">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu__btn" data-menu-close>
+            <svg class="mobile-menu__icon">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu-title">
+            <li class="mobile-menu-title__list">
+              <a class="link mobile-menu-title__item" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-title__list">
+              <a class="link mobile-menu-title__item" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-title__list">
+              <a class="link mobile-menu-title__item" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="list mobile-menu-contact">
+            <li class="mobile-menu-contact__list">
+              <a class="link mobile-menu-contact__telefon" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__list">
+              <a class="link mobile-menu-contact__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="list mobile-menu-socials">
+            <li class="mobile-menu-socials__item">
+              <a class="link mobile-menu-socials__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="link mobile-menu-socials__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="link mobile-menu-socials__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="link mobile-menu-socials__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="text">
+        <h1 class="visually-hidden">Наши проекты</h1>
+
+        <div class="container">
+          <ul class="list text-list">
+            <li class="list-btn"><button class="list-button" type="button">Все</button></li>
+            <li class="list-btn"><button class="list-button" type="button">Веб-сайты</button></li>
+            <li class="list-btn"><button class="list-button" type="button">Приложения</button></li>
+            <li class="list-btn"><button class="list-button" type="button">Дизайн</button></li>
+            <li class="list-btn"><button class="list-button" type="button">Маркетинг</button></li>
+          </ul>
+
+          <ul class="list list-projects">
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/technokryak-370/technokryak-370.jpg    1x,
+                        ./images/portfolio/desktop/technokryak-370/technokryak-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/technokryak-354/technokryak-354.jpg    1x,
+                        ./images/portfolio/tablet/technokryak-354/technokryak-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/technocryak-450/technocryak-450.jpg    1x,
+                        ./images/portfolio/mobile/technocryak-450/technocryak-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/technocryak-450/technocryak-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+
+                <div class="type-project">
+                  <h2 class="name-project">Технокряк</h2>
+                  <p class="type-work">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/poster-new-orlean-370/poster-new-orlean-370.jpg    1x,
+                        ./images/portfolio/desktop/poster-new-orlean-370/poster-new-orlean-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/poster-new-orlean-354/poster-new-orlean-354.jpg    1x,
+                        ./images/portfolio/tablet/poster-new-orlean-354/poster-new-orlean-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/poster-new-orlean-450/poster-new-orlean-450.jpg    1x,
+                        ./images/portfolio/mobile/poster-new-orlean-450/poster-new-orlean-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/poster-new-orlean-450/poster-new-orlean-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="type-work">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/seafood-370/seafood-370.jpg    1x,
+                        ./images/portfolio/desktop/seafood-370/seafood-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/seafood-354/seafood-354.jpg    1x,
+                        ./images/portfolio/tablet/seafood-354/seafood-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/seafood-450/seafood-450.jpg    1x,
+                        ./images/portfolio/mobile/seafood-450/seafood-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/seafood-450/seafood-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="type-work">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/prime-370/prime-370.jpg    1x,
+                        ./images/portfolio/desktop/prime-370/prime-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/prime-354/prime-354.jpg    1x,
+                        ./images/portfolio/tablet/prime-354/prime-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/prime-450/prime-450.jpg    1x,
+                        ./images/portfolio/mobile/prime-450/prime-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/prime-450/prime-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">Проект <span lang="en">Prime</span></h2>
+                  <p class="type-work">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/boxes-370/boxes-370.jpg    1x,
+                        ./images/portfolio/desktop/boxes-370/boxes-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/boxes-354/boxes-354.jpg    1x,
+                        ./images/portfolio/tablet/boxes-354/boxes-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/boxes-450/boxes-450.jpg    1x,
+                        ./images/portfolio/mobile/boxes-450/boxes-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/boxes-450/boxes-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">Проект <span lang="en">Boxes</span></h2>
+                  <p class="type-work">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/inspiration-370/inspiration-370.jpg    1x,
+                        ./images/portfolio/desktop/inspiration-370/inspiration-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/inspiration-354/inspiration-354.jpg    1x,
+                        ./images/portfolio/tablet/inspiration-354/inspiration-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/inspiration-450/inspiration-450.jpg    1x,
+                        ./images/portfolio/mobile/inspiration-450/inspiration-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/inspiration-450/inspiration-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project" lang="en">Inspiration has no Borders</h2>
+                  <p class="type-work">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/limited-edition-370/limited-edition-370.jpg    1x,
+                        ./images/portfolio/desktop/limited-edition-370/limited-edition-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/limited-edition-354/limited-edition-354.jpg    1x,
+                        ./images/portfolio/tablet/limited-edition-354/limited-edition-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/limited-edition-450/limited-edition-450.jpg    1x,
+                        ./images/portfolio/mobile/limited-edition-450/limited-edition-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/limited-edition-450/limited-edition-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="type-work">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/lab-370/lab-370.jpg    1x,
+                        ./images/portfolio/desktop/lab-370/lab-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/lab-354/lab-354.jpg    1x,
+                        ./images/portfolio/tablet/lab-354/lab-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/lab-450/lab-450.jpg    1x,
+                        ./images/portfolio/mobile/lab-450/lab-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/lab-450/lab-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project">Проект <span lang="en">LAB</span></h2>
+                  <p class="type-work">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="list-projects-box">
+              <a class="list-projects-box-link link" href="#">
+                <div class="type-project-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/growing-business-370/growing-business-370.jpg    1x,
+                        ./images/portfolio/desktop/growing-business-370/growing-business-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/growing-business-354/growing-business-354.jpg    1x,
+                        ./images/portfolio/tablet/growing-business-354/growing-business-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/growing-business-450/growing-business-450.jpg    1x,
+                        ./images/portfolio/mobile/growing-business-450/growing-business-450@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/growing-business-450/growing-business-450.jpg"
+                      alt="Примеры наших проектов"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="type-project">
+                  <h2 class="name-project" lang="en">Growing Business</h2>
+                  <p class="type-work">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-text">
+        <div class="footer-text__block footer-logo">
+          <a class="link logo footer-logo__link" href="./index.html" lang="en"
+            >Web<span class="logo-name footer-logo__white">Studio</span></a
+          >
+
+          <address class="address">
+            <ul class="list address-list">
+              <li class="address-item">
+                <a
+                  class="link address-item__map"
+                  href="https://goo.gl/maps/Jtf2G3s5tDUkeW6h7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="link address-item__mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="link address-item__telefon" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-text__block footer-social">
+          <p class="footer-title">присоединяйтесь</p>
+          <ul class="footer-social-list">
+            <li class="list">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-link__icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-link__icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-link__icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-link__icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-text__block footer-subscribe">
+          <p class="footer-title">подпишитесь на рассылку</p>
+          <form class="footer-form">
+            <label class="footer-form-email">
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="E-mail"
+                class="footer-form-email__field"
+              />
+            </label>
+
+            <button type="submit" class="btn-subscribe">
+              Подписаться
+              <svg class="btn-subscribe__img">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
