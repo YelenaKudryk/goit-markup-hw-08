@@ -5,9 +5,10 @@
 
 .text-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 40px;
   gap: 8px;
+  row-gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -99,7 +100,7 @@
   color: var(--accent-color-font);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform var(--transition-dur-funk);
 
   .list-projects-box-link:hover &,
@@ -109,8 +110,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .list-projects-box:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
   .text-list {
     flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
   .list-projects {
@@ -133,5 +140,9 @@
 
   .list-projects-box {
     flex-basis: calc((100% - 60px) / 3);
+  }
+
+  .text-list {
+    margin-bottom: 50px;
   }
 }

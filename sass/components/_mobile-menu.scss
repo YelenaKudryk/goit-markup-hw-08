@@ -67,6 +67,10 @@
     }
   }
 
+  .mobile-menu-title__item_current {
+    color: var(--accent-color);
+  }
+
   .mobile-menu-title__list:not(:last-child) {
     margin-bottom: 32px;
   }

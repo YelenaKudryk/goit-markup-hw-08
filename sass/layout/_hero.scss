@@ -27,7 +27,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color-font);
-  width: 320px;
+  width: 300px;
 }
 
 .modal {
@@ -49,15 +49,17 @@
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
-  scree and (min-resolution: 2dppx) and (max-width: 767px) {
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(../images/hero-mobile/hero-mobile-jpg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobile/hero-mobile-jpg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-tablet/hero-tablet-jpg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-tablet/hero-tablet-jpg.jpg);
   }
 
   .heading {
@@ -67,15 +69,17 @@
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
-  scree and (min-resolution: 2dppx) and (min-width: 768px) {
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero-tablet/hero-tablet-jpg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-tablet/hero-tablet-jpg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-desktop/hero-desktop-jpg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-desktop/hero-desktop-jpg.jpg);
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -94,8 +98,9 @@
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  scree and (min-resolution: 2dppx) and (min-width: 1200px) {
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero-desktop/hero-desktop-jpg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-desktop/hero-desktop-jpg@2x.jpg);
   }
 }

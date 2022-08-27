@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
 
+  max-height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -39,6 +40,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .permanent-client-item {
+    height: 92px;
+  }
+
   .permanent-client-list__item {
     flex-basis: calc((100% - 60px) / 3);
   }

@@ -16,6 +16,7 @@
   max-width: 766px;
   height: 120px;
   background-color: var(--secondary-color-background);
+  border-radius: 4px;
 }
 
 .subtitle {
@@ -52,6 +53,10 @@
   .desc-list-box-img {
     max-width: 354px;
   }
+
+  .subtitle {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -65,9 +70,5 @@
     align-items: center;
     flex-wrap: nowrap;
     gap: 30px;
-  }
-
-  .subtitle {
-    text-align: left;
   }
 }
