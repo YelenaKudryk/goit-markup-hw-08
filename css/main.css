@@ -265,18 +265,6 @@ button {
   background-color: var(--bcg-btn-hover-focus);
 }
 
-@media screen and (min-width: 1200px) {
-  .checkbox {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-  }
-  .checkbox-link {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-  }
-}
 .backdrop {
   position: fixed;
   top: 0;
@@ -299,7 +287,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
+  width: calc(100% - 30px);
   background-color: var(--backgroud-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -335,6 +323,11 @@ button {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop-modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .backdrop-modal {
     width: 528px;
@@ -718,6 +711,7 @@ button {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
   .heading {
     font-size: 44px;
@@ -832,7 +826,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 92px;
+  height: 75px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -843,10 +837,12 @@ button {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 380px) {
   .permanent-client-item {
     height: 92px;
   }
+}
+@media screen and (min-width: 768px) {
   .permanent-client-list__item {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -950,7 +946,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 10px;
 }
 
 .social-list-link {
@@ -958,6 +954,8 @@ button {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   transition: background-color var(--transition-dur-funk), color var(--transition-dur-funk);
 }
@@ -1185,6 +1183,9 @@ address {
   }
   .footer-logo {
     margin-right: 70px;
+  }
+  .footer-social-list {
+    justify-content: left;
   }
   .footer-subscribe {
     margin-left: auto;

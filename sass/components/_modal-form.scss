@@ -157,13 +157,3 @@
     background-color: var(--bcg-btn-hover-focus);
   }
 }
-
-@media screen and (min-width: 1200px) {
-  .checkbox {
-    @include font(14px, 400, 1.71);
-  }
-
-  .checkbox-link {
-    @include font(14px, 400, 1.71);
-  }
-}
